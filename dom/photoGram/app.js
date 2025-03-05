@@ -21,6 +21,8 @@ const commentButton = document.createElement("button");
 const postFooter = document.createElement("div");
 const commentContainer = document.createElement("div");
 
+let isLiked = false;
+
 userName.textContent = author;
 post.className = "post";
 postImg.setAttribute("src", image);
@@ -62,9 +64,12 @@ function renderPosts() {
   );
   posts.append(post);
   likeButton.addEventListener("click", () => {
-    likeCount += 1;
-    postFooter.innerHTML = "";
-    postFooter.append(`Likes: ${likeCount}`, ` Comments: ${commentsCount}`);
+    if(isLiked === false){
+      likeCount += 1;
+      postFooter.innerHTML = "";
+      postFooter.append(`Likes: ${likeCount}`, ` Comments: ${commentsCount}`);
+    }
+    isLiked = true;
   });
 
   postFooter.addEventListener('click' , () =>{
