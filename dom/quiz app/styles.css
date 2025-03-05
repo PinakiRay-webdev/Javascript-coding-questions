@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 , h4{
+    margin: 0px;
+    line-height: 2rem;
+}
+
+main{
+    width: 80%;
+    margin: 0px auto;
+}
+
+main #nextBtn{
+    background-color: #89023e;
+    padding: 5px 18px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+}
+
+.questions{
+    background-color: #89023e;
+    color: white;
+    padding: 10px 0px;
+}
+
+.options{
+    margin: 1rem 0px;
+}
+
+.options button{
+    padding: 8px 12px;
+    width: 100%;
+    margin: 5px 0px;
+    cursor: pointer;
+    background-color: #ffd9da;
+    border: none;
+}
+
+#score{
+    margin-bottom: 1rem;
+}
